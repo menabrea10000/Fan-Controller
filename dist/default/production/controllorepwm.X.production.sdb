@@ -1,0 +1,247 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1455 ]
+[d frameptr 6 ]
+"87 C:\Users\Mastro\MPLABXProjects\controllorepwm.X\mcc_generated_files/adc.c
+[e E2462 . `uc
+channel_AN3 3
+channel_Temp 29
+channel_DAC 30
+channel_FVR 31
+]
+"58 C:\Users\Mastro\MPLABXProjects\controllorepwm.X\main.c
+[e E2484 . `uc
+channel_AN3 3
+channel_Temp 29
+channel_DAC 30
+channel_FVR 31
+]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"54 C:\Users\Mastro\MPLABXProjects\controllorepwm.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"65 C:\Users\Mastro\MPLABXProjects\controllorepwm.X\mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"86
+[v _ADC_SelectChannel ADC_SelectChannel `(v  1 e 1 0 ]
+"94
+[v _ADC_StartConversion ADC_StartConversion `(v  1 e 1 0 ]
+"101
+[v _ADC_IsConversionDone ADC_IsConversionDone `(uc  1 e 1 0 ]
+"107
+[v _ADC_GetConversionResult ADC_GetConversionResult `(ui  1 e 2 0 ]
+"50 C:\Users\Mastro\MPLABXProjects\controllorepwm.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"61
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"73
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"57 C:\Users\Mastro\MPLABXProjects\controllorepwm.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"58 C:\Users\Mastro\MPLABXProjects\controllorepwm.X\mcc_generated_files/pwm1.c
+[v _PWM1_Initialize PWM1_Initialize `(v  1 e 1 0 ]
+"72
+[v _PWM1_LoadDutyValue PWM1_LoadDutyValue `(v  1 e 1 0 ]
+"62 C:\Users\Mastro\MPLABXProjects\controllorepwm.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+[s S57 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"539 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic16f1455.h
+[u S66 . 1 `S57 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES66  1 e 1 @17 ]
+"840
+[v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
+"860
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"880
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+[s S79 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+"901
+[s S83 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[u S91 . 1 `S79 1 . 1 0 `S83 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES91  1 e 1 @28 ]
+"951
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"978
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S199 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1160
+[s S206 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S213 . 1 `S199 1 . 1 0 `S206 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES213  1 e 1 @149 ]
+"1277
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1336
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1400
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1534
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"1554
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"1574
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S139 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+"1599
+[s S143 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+[s S151 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S154 . 1 `S139 1 . 1 0 `S143 1 . 1 0 `S151 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES154  1 e 1 @157 ]
+"1654
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"1720
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @159 ]
+"1762
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"1789
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+"2123
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"2339
+[v _APFCON APFCON `VEuc  1 e 1 @285 ]
+"2385
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2414
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"2927
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3926
+[v _ACTCON ACTCON `VEuc  1 e 1 @923 ]
+"3973
+[v _PWM1DCL PWM1DCL `VEuc  1 e 1 @1553 ]
+"4009
+[v _PWM1DCH PWM1DCH `VEuc  1 e 1 @1554 ]
+"4079
+[v _PWM1CON PWM1CON `VEuc  1 e 1 @1555 ]
+"47 C:\Users\Mastro\MPLABXProjects\controllorepwm.X\main.c
+[v _DUTYC DUTYC `ui  1 e 2 0 ]
+"48
+[v _ValoreADC ValoreADC `ui  1 e 2 0 ]
+"49
+[v _Temp Temp `ui  1 e 2 0 ]
+"54
+[v _main main `(v  1 e 1 0 ]
+{
+"118
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"50 C:\Users\Mastro\MPLABXProjects\controllorepwm.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"59
+} 0
+"73
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"62 C:\Users\Mastro\MPLABXProjects\controllorepwm.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"58 C:\Users\Mastro\MPLABXProjects\controllorepwm.X\mcc_generated_files/pwm1.c
+[v _PWM1_Initialize PWM1_Initialize `(v  1 e 1 0 ]
+{
+"70
+} 0
+"57 C:\Users\Mastro\MPLABXProjects\controllorepwm.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"97
+} 0
+"61 C:\Users\Mastro\MPLABXProjects\controllorepwm.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"71
+} 0
+"65 C:\Users\Mastro\MPLABXProjects\controllorepwm.X\mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+{
+"84
+} 0
+"72 C:\Users\Mastro\MPLABXProjects\controllorepwm.X\mcc_generated_files/pwm1.c
+[v _PWM1_LoadDutyValue PWM1_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM1_LoadDutyValue@dutyValue dutyValue `ui  1 p 2 0 ]
+"79
+} 0
+"94 C:\Users\Mastro\MPLABXProjects\controllorepwm.X\mcc_generated_files/adc.c
+[v _ADC_StartConversion ADC_StartConversion `(v  1 e 1 0 ]
+{
+"98
+} 0
+"86
+[v _ADC_SelectChannel ADC_SelectChannel `(v  1 e 1 0 ]
+{
+[v ADC_SelectChannel@channel channel `E2462  1 a 1 wreg ]
+[v ADC_SelectChannel@channel channel `E2462  1 a 1 wreg ]
+"89
+[v ADC_SelectChannel@channel channel `E2462  1 a 1 1 ]
+"92
+} 0
+"101
+[v _ADC_IsConversionDone ADC_IsConversionDone `(uc  1 e 1 0 ]
+{
+"105
+} 0
+"107
+[v _ADC_GetConversionResult ADC_GetConversionResult `(ui  1 e 2 0 ]
+{
+"111
+} 0
