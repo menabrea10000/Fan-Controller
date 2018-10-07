@@ -47,30 +47,21 @@ uint16_t DUTYC = 0;
 uint16_t ValoreADC = 0;
 uint16_t Temp;
 
-void main(void)
-{
+void main(void) {
     SYSTEM_Initialize();
     ADC_SelectChannel(channel_AN3);
     PWM1_LoadDutyValue(DUTYC);
-
-    while (1)
-    {
+    while (1){
         __delay_ms(1000);
         if (!LATCbits.LATC0){                     //Interruttore
             ADC_StartConversion();
             while(!ADC_IsConversionDone());
             ValoreADC = ADC_GetConversionResult();
             Temp = (ValoreADC - 82) / 4;          //Calcolo Temperatura MCP9701A
-
-            if (Temp > 60){
-                DUTYC = 0xFFFF;
-            }
-            else if (Temp < 30){
-                DUTYC = 0x0000;
-            }
-            else {
-                DUTYC = (34 * Temp) - 1024;       //Funzione Retta Temp/PWM
-            }
+            if (Temp > 60) DUTYC = 0xFFFF;
+            else if (Temp < 30) DUTYC = 0x0000;
+            else DUTYC = (34 * Temp) - 1024;       //Funzione Retta Temp/PWM
+            
         }
         else {
             ADC_StartConversion();
