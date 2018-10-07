@@ -60,7 +60,7 @@ void main(void) {
             Temp = (ValoreADC - 82) / 4;          //Calcolo Temperatura MCP9701A
             if (Temp > 60) DUTYC = 0xFFFF;
             else if (Temp < 30) DUTYC = 0x0000;
-            else DUTYC = (34 * Temp) - 1024;       //Funzione Retta Temp/PWM
+            else DUTYC = (24 * Temp) - 420;       //Funzione Retta Temp/PWM
             
         }
         else {
